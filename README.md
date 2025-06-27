@@ -61,7 +61,7 @@ secure-audio-codec/
 Install the two run‑time dependencies in one go:
 
 ```bash
-pip install numpy soundfile
+- pip install numpy soundfile
 ```
 
 > **Tip ▶︎** If you like reproducible installs, drop this into a `requirements.txt` and run `pip install -r requirements.txt`:
