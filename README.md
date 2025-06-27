@@ -20,17 +20,17 @@
 
 ## 🚀 Overview
 
-**Secure Audio Codec** turns your text into a WAV file by assigning every character its own tone (frequency). The exact mapping is shuffled with a secret key or a SHA‑256 hash, so only someone who knows the key can re‑assemble the tones back into readable text. The whole workflow – encoding, decoding, and a dark‑theme GUI – sits in a single `secure_audio_codec.py` file.
+**Secure Audio Codec** turns your text into a WAV file by assigning every character its own tone (frequency). The exact mapping is shuffled with a secret key or a SHA‑256 hash, so only someone who knows the key can re‑assemble the tones back into readable text. The whole workflow – encoding, decoding, and a dark‑theme GUI – sits in a single `secure_audio_codec.py` file.
 
 ---
 
 ## ✨ Features
 
-- **Key‑Based Encryption** – Any string works as a key; a built‑in dialog can hash it to SHA‑256 for extra entropy.
-- **Text ↔ Audio** – Encode messages to `.wav`; decode them back to plain text.
-- **Unicode Friendly** – Supports ASCII, digits, punctuation, and Czech diacritics out of the box.
-- **Minimal Dependencies** – Only `numpy`, `soundfile`, and the Python standard library.
-- **Clean Dark GUI** – Built with `tkinter`, so it runs everywhere Python does.
+- **Key‑Based Encryption** – Any string works as a key; a built‑in dialog can hash it to SHA‑256 for extra entropy.
+- **Text ↔ Audio** – Encode messages to `.wav`; decode them back to plain text.
+- **Unicode Friendly** – Supports ASCII, digits, punctuation, and Czech diacritics out of the box.
+- **Minimal Dependencies** – Only `numpy`, `soundfile`, and the Python standard library.
+- **Clean Dark GUI** – Built with `tkinter`, so it runs everywhere Python does.
 
 ---
 
@@ -54,7 +54,7 @@ secure-audio-codec/
 
 ### ✅ Prerequisites
 
-- **Python 3.8 or newer**
+- **Python 3.8 or newer**
 
 ### ⚙️ Installation
 
@@ -64,7 +64,7 @@ Install the two run‑time dependencies in one go:
 pip install numpy soundfile
 ```
 
-> **Tip ▶︎** If you like reproducible installs, drop this into a `requirements.txt` and run `pip install -r requirements.txt`:
+> **Tip ▶︎** If you like reproducible installs, drop this into a `requirements.txt` and run `pip install -r requirements.txt`:
 >
 > ```
 > numpy
@@ -84,7 +84,7 @@ python secure_audio_codec.py
 #### GUI Walkthrough
 
 1. **Choose Mode** – `Encrypt` **or** `Decrypt`.
-2. **Enter / Generate Key** – Type anything or click *Generate SHA‑256*.
+2. **Enter / Generate Key** – Type anything or click *Generate SHA‑256*.
 3. **Encrypt Mode**
    - Type a message in the bottom pane.
    - Press **Run**, pick a filename, and a WAV pops out.
@@ -99,15 +99,18 @@ python secure_audio_codec.py
 No automated tests (yet), but you can sanity‑check manually:
 
 1. Launch the program.
-2. Encrypt the string `Hello world!` using key `test123`.
+2. Encrypt the string `Hello world!` using key `test123`.
 3. Decrypt the saved WAV with the same key.
-4. Verify the output equals `Hello world!`.
+4. Verify the output equals `Hello world!`.
 
 ---
 
 ## 🛣 Roadmap
 
--
+- Add automated tests for encoding/decoding.
+- Support additional audio formats (e.g., MP3).
+- Implement key strength validation.
+- Add support for more Unicode character sets.
 
 ---
 
@@ -132,4 +135,3 @@ Released under the MIT License – see `LICENSE` for details.
 - [`tkinter`](https://docs.python.org/3/library/tkinter.html)
 
 > Inspired by classic “acoustic modem” experiments and the need for a dead‑simple, GUI‑friendly proof of concept.
-
