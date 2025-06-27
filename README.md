@@ -21,10 +21,14 @@
 ## 🚀 Overview
 
 **Secure Audio Codec** turns your text into a WAV file by assigning every character its own tone (frequency). The exact mapping is shuffled with a secret key or a SHA‑256 hash, so only someone who knows the key can re‑assemble the tones back into readable text. The whole workflow – encoding, decoding, and a dark‑theme GUI – sits in a single `secure_audio_codec.py` file.
-![image](https://github.com/user-attachments/assets/0a11a894-4c39-419c-b5d3-1c56437889b1)
+
 
 
 ---
+## 🖼 ScreenShot
+![image](https://github.com/user-attachments/assets/0a11a894-4c39-419c-b5d3-1c56437889b1)
+---
+
 
 ## ✨ Features
 
